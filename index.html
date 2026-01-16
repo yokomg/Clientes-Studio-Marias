@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Marias - 50 anos de tradição em costura</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset e estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --rosa-claro: #f9e4e8;
+            --rosa-medio: #e8b4bc;
+            --rosa-escuro: #c97c8c;
+            --cinza-claro: #f5f5f5;
+            --cinza-escuro: #333;
+            --bege: #f8f3e9;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: var(--cinza-escuro);
+            background-color: var(--bege);
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            color: var(--rosa-escuro);
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: var(--rosa-escuro);
+            border-bottom: 1px solid var(--rosa-medio);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--cinza-escuro);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--rosa-escuro);
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--rosa-medio);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--rosa-escuro);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--rosa-medio);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            font-size: 2.5rem;
+            color: var(--rosa-escuro);
+            margin-right: 15px;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+
+        .logo span {
+            font-size: 0.9rem;
+            color: var(--rosa-medio);
+            letter-spacing: 2px;
+            display: block;
+            margin-top: -5px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--rosa-escuro);
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url('https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            border: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            color: #555;
+        }
+
+        .anniversary-badge {
+            display: inline-block;
+            background-color: var(--rosa-escuro);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        /* Seções */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-light {
+            background-color: white;
+        }
+
+        .section-beige {
+            background-color: var(--bege);
+        }
+
+        .section-pink {
+            background-color: var(--rosa-claro);
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Serviços */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .service-card:hover .service-img img {
+            transform: scale(1.05);
+        }
+
+        .service-content {
+            padding: 25px;
+        }
+
+        .service-content h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Galeria */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            height: 250px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        /* Depoimentos */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        /* Contato */
+        .contact-container {
+            display: flex;
+            gap: 50px;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-form {
+            flex: 1;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .contact-info-item i {
+            font-size: 1.5rem;
+            color: var(--rosa-escuro);
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Georgia', serif;
+            font-size: 1rem;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .whatsapp-explanation {
+            background-color: var(--rosa-claro);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .whatsapp-explanation i {
+            color: #25D366;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--cinza-escuro);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-logo h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo p {
+            color: #aaa;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background-color: var(--rosa-medio);
+            transform: translateY(-3px);
+        }
+
+        .footer-links h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a {
+            color: #aaa;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--rosa-medio);
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        /* Botão flutuante do WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-float i {
+            color: white;
+            font-size: 2rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .header-container {
+                padding: 15px 0;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .hero {
+                padding: 80px 0;
+            }
+            
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .whatsapp-float i {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Botão flutuante do WhatsApp -->
+    <a href="https://wa.me/5511987654321?text=Olá! Gostaria de mais informações sobre os serviços do Studio Marias." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-vest-patches"></i>
+                <div>
+                    <h1>Studio Marias</h1>
+                    <span>Costura & Alta Costura</span>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="anniversary-badge">50 ANOS DE TRADIÇÃO</div>
+            <h2>Studio Marias</h2>
+            <p>Há meio século criando peças únicas, transformando tecidos em obras de arte e vestindo gerações com elegância e perfeição. Do clássico ao contemporâneo, nossa paixão pela costura se reflete em cada ponto.</p>
+            <a href="#contact" class="btn">Agende uma Consulta</a>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section class="section-light" id="about">
+        <div class="container">
+            <h2>Nossa História</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Fundado em 1974 por Maria das Graças e Maria do Carmo, o Studio Marias começou como um pequeno ateliê no centro da cidade. Com paixão, dedicação e muito talento, as duas Marias transformaram o amor pela costura em um negócio que atravessa gerações.</p>
+                    <p>Hoje, dirigido pelas filhas e netas das fundadoras, mantemos viva a tradição do trabalho artesanal combinado com técnicas modernas. Nossa missão é criar peças que contam histórias, valorizam a individualidade e celebram a beleza única de cada pessoa.</p>
+                    <p>Com 50 anos de experiência, já vestimos noivas, formandas, profissionais e celebridades, sempre com o mesmo cuidado e atenção aos detalhes que nos tornaram referência em costura fina.</p>
+                    <a href="#gallery" class="btn">Conheça Nossos Trabalhos</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1594736797933-d0c6e4d6d6c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Ateliê do Studio Marias">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="section-beige" id="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Alta Costura">
+                    </div>
+                    <div class="service-content">
+                        <h3>Alta Costura</h3>
+                        <p>Criação de peças exclusivas sob medida, utilizando as melhores técnicas e tecidos. Vestidos de noiva, trajes de gala e peças especiais feitas com perfeição.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Reformas e Ajustes">
+                    </div>
+                    <div class="service-content">
+                        <h3>Reformas e Ajustes</h3>
+                        <p>Transformamos suas peças favoritas! Ajustes de medida, modernização de roupas antigas e reformas completas para dar nova vida ao seu guarda-roupa.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1520006403909-838d6b92c22e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Customização">
+                    </div>
+                    <div class="service-content">
+                        <h3>Customização</h3>
+                        <p>Personalizamos peças com bordados, aplicações e detalhes únicos. Transformamos roupas simples em peças especiais que refletem sua personalidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section class="section-light" id="gallery">
+        <div class="container">
+            <h2>Nossos Trabalhos</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=892&q=80" alt="Vestido de Noiva">
+                    <div class="gallery-overlay">
+                        <h4>Vestido de Noiva</h4>
+                        <p>Renda francesa e bordados à mão</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Traje de Gala">
+                    <div class="gallery-overlay">
+                        <h4>Traje de Gala</h4>
+                        <p>Seda natural com detalhes em pedraria</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Reforma de Vestido">
+                    <div class="gallery-overlay">
+                        <h4>Reforma de Vestido</h4>
+                        <p>Transformação completa com modernização</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Bordado Personalizado">
+                    <div class="gallery-overlay">
+                        <h4>Bordado Personalizado</h4>
+                        <p>Detalhe em vestido com bordado à mão</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="section-pink">
+        <div class="container">
+            <h2>O Que Nossas Clientes Dizem</h2>
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Meu vestido de noiva foi feito pelas Marias e foi perfeito! Cada detalhe foi pensado com tanto carinho. Foi mais do que um vestido, foi uma experiência incrível."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Ana Clara">
+                        <div>
+                            <h4>Ana Clara</h4>
+                            <p>Noiva, 2023</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Levo minhas roupas ao Studio Marias há mais de 20 anos. A qualidade do trabalho é impecável e o atendimento é familiar. Realmente amam o que fazem."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Beatriz Santos">
+                        <div>
+                            <h4>Beatriz Santos</h4>
+                            <p>Cliente há 20 anos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Reformei o vestido de casamento da minha mãe para usar no meu baile de formatura. O Studio Marias fez um trabalho tão lindo que emocionei quando vi o resultado. Superou todas as minhas expectativas!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Carolina Mendes">
+                        <div>
+                            <h4>Carolina Mendes</h4>
+                            <p>Cliente, 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section-light" id="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Endereço</h3>
+                            <p>Rua Porto Velho do Cunha, 22 - Inhoaíba, Campo Grande<br>Rio de Janeiro - RJ</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telefone</h3>
+                            <p>(55) 21 98075-4263</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>contato@studiomarias.com.br</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horário de Funcionamento</h3>
+                            <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envie sua mensagem pelo WhatsApp</h3>
+                    <p>Preencha o formulário abaixo e clique em "Enviar para WhatsApp". Você será direcionado(a) para nosso WhatsApp com a mensagem pronta!</p>
+                    
+                    <form id="whatsappForm">
+                        <input type="text" id="nome" placeholder="Seu nome completo" required>
+                        <input type="tel" id="telefone" placeholder="Seu telefone com DDD" required>
+                        <input type="email" id="email" placeholder="Seu e-mail (opcional)">
+                        
+                        <select id="servico" required>
+                            <option value="" disabled selected>Selecione o serviço de interesse</option>
+                            <option value="Alta Costura">Alta Costura</option>
+                            <option value="Reformas e Ajustes">Reformas e Ajustes</option>
+                            <option value="Customização">Customização</option>
+                            <option value="Consultoria">Consultoria de Estilo</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                        
+                        <textarea id="mensagem" placeholder="Descreva brevemente sua necessidade ou projeto" required></textarea>
+                        
+                        <button type="submit" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Enviar para WhatsApp
+                        </button>
+                    </form>
+                    
+                    <div class="whatsapp-explanation">
+                        <i class="fab fa-whatsapp"></i>
+                        <p><strong>Como funciona:</strong> Após preencher o formulário, você será redirecionado(a) para o WhatsApp com a mensagem formatada. Basta confirmar o envio para iniciar nossa conversa!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h3>Studio Marias</h3>
+                    <p>50 anos transformando tecidos em sonhos e vestindo histórias com amor e perfeição.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Nossos Serviços</h4>
+                    <ul>
+                        <li><a href="#services">Alta Costura</a></li>
+                        <li><a href="#services">Reformas e Ajustes</a></li>
+                        <li><a href="#services">Customização</a></li>
+                        <li><a href="#services">Consultoria de Estilo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Horário de Atendimento</h4>
+                    <ul>
+                        <li><strong>Segunda a Sexta:</strong> 9h às 18h</li>
+                        <li><strong>Sábado:</strong> 9h às 13h</li>
+                        <li><strong>Domingo:</strong> Fechado</li>
+                        <li><strong>WhatsApp:</strong> Atendimento durante o horário comercial</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Studio Marias - Costura & Alta Costura. Todos os direitos reservados. | Fundado em 1974</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu móvel
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainMenu = document.getElementById('mainMenu');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            mainMenu.style.display = mainMenu.style.display === 'flex' ? 'none' : 'flex';
+            if (mainMenu.style.display === 'flex') {
+                mainMenu.style.flexDirection = 'column';
+                mainMenu.style.position = 'absolute';
+                mainMenu.style.top = '70px';
+                mainMenu.style.right = '0';
+                mainMenu.style.backgroundColor = 'white';
+                mainMenu.style.width = '200px';
+                mainMenu.style.padding = '20px';
+                mainMenu.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                
+                const menuItems = mainMenu.querySelectorAll('li');
+                menuItems.forEach(item => {
+                    item.style.margin = '10px 0';
+                });
+            }
+        });
+        
+        // Fechar menu ao clicar em um link
+        const menuLinks = document.querySelectorAll('nav a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    mainMenu.style.display = 'none';
+                }
+            });
+        });
+        
+        // Formulário WhatsApp
+        const whatsappForm = document.getElementById('whatsappForm');
+        whatsappForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Coletar dados do formulário
+            const nome = document.getElementById('nome').value;
+            const telefone = document.getElementById('telefone').value;
+            const email = document.getElementById('email').value;
+            const servico = document.getElementById('servico').value;
+            const mensagem = document.getElementById('mensagem').value;
+            
+            // Número de telefone do Studio Marias
+            const numeroWhatsApp = "5521980754263";
+            
+            // Criar mensagem formatada
+            let textoMensagem = `*Studio Marias - Novo Contato via Site*\n\n`;
+            textoMensagem += `*Nome:* ${nome}\n`;
+            textoMensagem += `*Telefone:* ${telefone}\n`;
+            if (email) {
+                textoMensagem += `*E-mail:* ${email}\n`;
+            }
+            textoMensagem += `*Serviço de interesse:* ${servico}\n\n`;
+            textoMensagem += `*Mensagem:*\n${mensagem}\n\n`;
+            textoMensagem += `---\n`;
+            textoMensagem += `*Enviado via site do Studio Marias*`;
+            
+            // Codificar a mensagem para URL
+            const mensagemCodificada = encodeURIComponent(textoMensagem);
+            
+            // Criar URL do WhatsApp
+            const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`;
+            
+            // Redirecionar para o WhatsApp
+            window.open(urlWhatsApp, '_blank');
+            
+            // Limpar formulário
+            whatsappForm.reset();
+        });
+        
+        // Suavizar rolagem para âncoras
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Máscara para telefone
+        document.getElementById('telefone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            
+            if (value.length > 11) {
+                value = value.substring(0, 11);
+            }
+            
+            if (value.length > 10) {
+                value = value.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
+            } else if (value.length > 6) {
+                value = value.replace(/^(\d{2})(\d{4})(\d{0,4})$/, '($1) $2-$3');
+            } else if (value.length > 2) {
+                value = value.replace(/^(\d{2})(\d{0,5})$/, '($1) $2');
+            } else if (value.length > 0) {
+                value = value.replace(/^(\d*)$/, '($1');
+            }
+            
+            e.target.value = value;
+        });
+    </script>
+</body>
+</html>
